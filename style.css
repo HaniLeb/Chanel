@@ -1,0 +1,188 @@
+/* RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', 'raleway';
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+body{
+    background: linear-gradient(to right, #0752b5 50%, #061232 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Viewport Height */
+    height: 100vh;
+}
+
+main{
+    width: 70%;
+    height: 90%;
+    background: coral;
+
+    display: flex;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.right{
+    background: #fb1;
+    width: 50%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* ------------------------HAMBURGER------------------------------------ */
+.hamburger{
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all .5s;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.hamburger div{
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid gray;
+}
+
+.hamburger div:first-child{
+    width: 50%;
+}
+
+.hamburger div:last-child{
+    width: 50%;
+    margin-left: auto;
+}
+
+
+/* --------------------------------------------------------------------- */
+
+.leftMiddle{
+    width: 60%;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+footer ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* footer ul li:not(:last-child) Permet de sélectionner toutes les listes saufe la dernière */
+
+.top, .bottom{
+    height: 50%;
+}
+
+/* ---------------------------------------------- */
+
+.bottom{
+    background: chocolate;
+    display: flex;
+}
+
+
+.bottomLeft, .bottomRight{
+    width: 50%;
+}
+
+.img1 , .img2{
+    width: 100%;
+    height: 100%;
+}
+
+.bottomRight{
+    color: white;
+    background: darkcyan;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bottomRight a:first-child{
+    margin-bottom: 1rem;
+}
+
+i{
+    /* Permet de changer le curseur de la souris */
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+/* HOVER */
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+i:hover{
+    /* Permet de changer la rotation, la taille etc*/
+    transform: scale(2);
+}
